@@ -9,8 +9,6 @@ X_train = np.array([data[0], data[1], data[2], data[3], data[4]])
 X_train = np.insert(X_train,0,1,axis = 0)
 Y_train = np.array([data[5]]).T
 
-
-
 X_test = np.array([1, 79545, 5, 7, 4, 23086])
 w = np.linalg.pinv(X_train@X_train.T)@X_train@Y_train
 print("w = ", w)

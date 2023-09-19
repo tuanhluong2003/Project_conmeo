@@ -1,4 +1,3 @@
-
 import numpy as np
 from sklearn.linear_model import LinearRegression
 import pandas as pd
@@ -7,12 +6,11 @@ import pandas as pd
 data = pd.read_csv('USA_Housing.csv',header=None)
 X_train = np.array([data[0], data[1], data[2], data[3], data[4]]).T
 #chen tu dong mot cot 1 vao cot dau tien
-X_train = np.insert(X_train,0,1,axis = 1)
 Y_train = np.array([data[5]]).T
 
 reg = LinearRegression().fit(X_train,Y_train)
 
-x_test = np.array([[1,79545, 5, 7, 4, 23086]])
+x_test = np.array([[79545, 5, 7, 4, 23086]])
 
 print("w = ", reg.coef_)
 # Sai số
