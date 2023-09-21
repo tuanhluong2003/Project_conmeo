@@ -12,7 +12,7 @@ reg = LinearRegression().fit(X_train,Y_train)
 
 x_test = np.array([[79545, 5, 7, 4, 23086]])
 
-print("w = ", reg.score())
+print("w = ", reg.coef_)
 # Sai số
 print('w0 = ',reg.intercept_)
 print('Giá trị dự đoán mẫu mới: ',reg.predict(x_test))
