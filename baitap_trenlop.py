@@ -34,6 +34,6 @@ print("lasso : %.9f" % r2_score(Y_test,y_pred_lasso))
 print("ridge : %.9f" % r2_score(Y_test,y_pred_ridge))
 
 
-print("Thuc te du doan chech lech")
+print("Thuc te \t du doan \t chech lech")
 for i in range(0,len(y)):
     print("%.2f\t" %abs(y[i]-y_pred_linear[i]), "%.2f\t" %abs(y[i]-y_pred_lasso[i]),"%.2f" %abs(y[i]-y_pred_ridge[i]))
